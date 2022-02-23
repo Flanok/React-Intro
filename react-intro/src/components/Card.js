@@ -7,11 +7,11 @@ export default function Card(props) {
     } else if (props.location === "Online") {
         badgeText = "ONLINE"
     }
-    
+
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={props.person} alt="Nick Cage" className="card--img" />
+            <img src={props.img} alt="Nick Cage" className="card--img" />
             <div className="card--stats">
                 <img src="img/star.png" alt="star" className="card--star"/>
                 <span className="card--rating">{props.rating}</span>
